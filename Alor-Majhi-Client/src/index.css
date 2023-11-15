@@ -1,31 +1,43 @@
 .primary-btn {
-    background-image: linear-gradient(to right, #0A6F39 0%, #D3010A  51%, #0A6F39  100%);
-    margin: 10px;
-    padding: 15px 45px;
-    text-align: center;
-    text-transform: uppercase;
-    transition: 0.5s;
-    background-size: 200% auto;
-    color: white;            
-    box-shadow: 0 0 20px #eee;
-    border-radius: 10px;
-    display: block;
-  }
-  .primary-btn:hover {
-    background-position: right center; /* change the direction of the change here */
-    color: #fff;
-    text-decoration: none;
-  }
- /* .primary-bg{
+  background-image: linear-gradient(
+    to right,
+    #0a6f39 0%,
+    #d3010a 51%,
+    #0a6f39 100%
+  );
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+}
+.primary-btn:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+/* .primary-bg{
     background-color: #f10a12;
     opacity: 80%
   } */
 
-
-
-
-
-
+.primary-text {
+  color: #477763;
+}
+.secondary-text {
+  color: #d59b2d;
+}
+.primary-bg{
+    background-color: #477763;
+}
+.secondary-bg{
+    background-color: #d59b2d;
+}
 
 @tailwind base;
 @tailwind components;
