@@ -59,11 +59,6 @@ export default Banner;
 
 
 
-
-
-
-
-// import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 // import Typed from "react-typed";
 // import img1 from "../../../assets/banner image/img1.jpeg";
 // import img2 from "../../../assets/banner image/img2.jpg";
