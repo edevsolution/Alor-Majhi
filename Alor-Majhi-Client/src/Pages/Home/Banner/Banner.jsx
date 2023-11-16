@@ -37,7 +37,7 @@ const Banner = () => {
                 Find articulated, highly detailed Toys of heroes and villains
               </p>
 
-              <button>Register</button>
+          
              
             </div>
             </div>
