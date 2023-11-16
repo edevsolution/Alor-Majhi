@@ -1,4 +1,10 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&family=Tinos&display=swap');
+
+*{
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Tinos', serif; }
 .primary-btn {
   background-image: linear-gradient(
     to right,
