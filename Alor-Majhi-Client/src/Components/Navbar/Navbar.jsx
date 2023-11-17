@@ -4,7 +4,7 @@ import logo2 from "../../../public/logo/logo2.png"
 
 const Navbar = () => {
   return (
-    <div className="navbar bg-white shadow-lg">
+    <div className="navbar bg-white shadow-lg z-10">
       <div className="navbar-start flex items-center">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -25,7 +25,7 @@ const Navbar = () => {
           </label>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 font-semibold"
+            className="menu menu-sm dropdown-content mt-3 z-[100] p-2 shadow bg-base-100 rounded-box w-52 font-semibold"
           >
             <li>
               <Link>Home</Link>
@@ -55,7 +55,7 @@ const Navbar = () => {
         <Link className="w-16 h-10 mb-5"><img className="" src={logo2} alt="" /></Link>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1 font-semibold">
+        <ul className="menu menu-horizontal px-1 z-[100] font-semibold">
           <li>
             <Link to='/'>Home</Link>
           </li>
