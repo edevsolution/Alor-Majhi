@@ -1,10 +1,13 @@
-import React from "react";
+
+import React from 'react';
+import Contact from '../Contact/Contact';
 import About from "./About/About";
 import Banner from "./Banner/Banner";
 import Testimonial from "../../Components/Testimonial/Testimonial";
 import Gallery from "../Shared/Gallery/Gallery";
 
 const Home = () => {
+
   return (
     <div>
       <Banner></Banner>
