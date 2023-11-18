@@ -35,7 +35,7 @@ const Banner = () => {
             <p className="text-2xl font-medium my-5 secondary-text " data-aos="fade-right" data-aos-duration="1000">Lorem ipsum dolor sit amet consectetur.</p>
      <div data-aos="fade-right" data-aos-duration="1000">
 
-            <button className="px-4 py-2 border-2 font-medium bg-transparent text-black hover:border-2 hover:bg-yellow-500 hover:text-white ">Apply</button>
+            <button className="px-4 py-2 border-2 font-medium bg-transparent text-white hover:border-2 hover:bg-yellow-500 hover:text-black ">Apply</button>
      </div>
           </div>
         </SwiperSlide>
@@ -50,11 +50,27 @@ const Banner = () => {
               Lorem ipsum dolor sit <br /> amet consectetur <br /> adipisicing elit deserunt.
             </h1>
             <p className="text-2xl font-medium my-5 text-white"  data-aos="fade-down" data-aos-duration="1000">Lorem ipsum dolor sit amet consectetur.</p>
-            <button className="primary-btn ml-56"  data-aos="fade-up" data-aos-duration="2000">Apply</button>
+            <button className="px-4 py-2 border-2 font-medium bg-transparent text-white hover:border-2 hover:bg-yellow-500 hover:text-black ">Apply</button>
           </div>
         </SwiperSlide>
 
-        <SwiperSlide className="relative">
+        <SwiperSlide className="relative hid-bid">
+          <img src={img3} alt="" />
+          <div className="absolute inset-0 bg-black opacity-60"></div>
+          <div className="absolute top-30 right-20 text-end" >
+          <h1 className="text-6xl font-semibold secondary-text " data-aos="fade-right" data-aos-duration="500">
+              Lorem ipsum dolor sit <br /> amet consectetur <br /> adipisicing elit deserunt.
+            </h1>
+            <p className="text-2xl font-medium my-5 secondary-text " data-aos="fade-right" data-aos-duration="1000">Lorem ipsum dolor sit amet consectetur.</p>
+     <div data-aos="fade-right" data-aos-duration="1000">
+
+            <button className="px-4 py-2 border-2 font-medium bg-transparent text-white hover:border-2 hover:bg-yellow-500 hover:text-black ">Apply</button>
+     </div>
+          </div>
+        </SwiperSlide>
+
+
+        {/* <SwiperSlide className="relative">
           <img src={img3} alt="" />
           <div className="absolute inset-0 bg-black opacity-60"></div>
           <div className="absolute top-50 right-20 text-end">
@@ -71,7 +87,8 @@ const Banner = () => {
             <p className="text-2xl font-medium my-5 text-white">Lorem ipsum dolor sit amet consectetur.</p>
             <button className="primary-btn ml-56">Apply</button>
           </div>
-        </SwiperSlide>
+        </SwiperSlide> */}
+
       </Swiper>
     </div>
   );
