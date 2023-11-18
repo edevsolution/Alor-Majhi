@@ -24,7 +24,7 @@ const ContactUs = () => {
     };
     return (
         <div>
-            <div className="lg:flex lg:p-32 p-5 lg:mx-32 justify-between">
+            <div className="lg:flex md:flex p-5 lg:mx-32 justify-around">
                 <form ref={form} onSubmit={sendEmail} action="">
                     <h2 className="text-3xl font-bold py-8">Send Message</h2>
                     <div className="lg:flex gap-2">
@@ -85,7 +85,7 @@ const ContactUs = () => {
                         <MdMarkEmailUnread />
                         <div>
                             <p className="font-bold">E-mail</p>
-                            <p>alormajhibd@gmail.com</p>
+                            <Link to='alormajhibd@gmail.com'>alormajhibd@gmail.com</Link>
                         </div>
                     </div>
                     <div className="flex items-center text-2xl gap-3">
@@ -99,7 +99,7 @@ const ContactUs = () => {
                         <MdLocationPin />
                         <div>
                             <p className="font-bold">Address</p>
-                            <p>Nimtala,Bandar Chattogram</p>
+                            <p>Nimtala,Bandar, Chattogram</p>
                         </div>
                     </div>
                 </div>
