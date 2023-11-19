@@ -1,6 +1,5 @@
-
 import { Link } from "react-router-dom";
-import logo2 from "../../../public/logo/logo2.png"
+import logo2 from "../../../public/logo/logo2.png";
 
 const Navbar = () => {
   return (
@@ -45,23 +44,27 @@ const Navbar = () => {
               <Link>Members</Link>
             </li>
             <li>
-              <Link>About Us</Link>
+              <Link to="/about">About Us</Link>
             </li>
             <li>
               <Link>Contract Us</Link>
             </li>
           </ul>
         </div>
-        <Link className="w-16 h-10 mb-5"><img className="" src={logo2} alt="" /></Link>
+        <Link className="w-16 h-10 mb-5">
+          <img className="" src={logo2} alt="" />
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 font-semibold">
           <li>
-            <Link to='/'>Home</Link>
+            <Link to="/">Home</Link>
           </li>
           <li tabIndex={0}>
             <details>
-              <summary><Link>Our Works</Link></summary>
+              <summary>
+                <Link>Our Works</Link>
+              </summary>
               <ul className="p-2">
                 <li>
                   <Link>Submenu 1</Link>
@@ -73,14 +76,14 @@ const Navbar = () => {
             </details>
           </li>
           <li>
-              <Link>Members</Link>
-            </li>
-            <li>
-              <Link>About Us</Link>
-            </li>
-            <li>
-              <Link>Contract Us</Link>
-            </li>
+            <Link>Members</Link>
+          </li>
+          <li>
+            <Link>About Us</Link>
+          </li>
+          <li>
+            <Link>Contract Us</Link>
+          </li>
         </ul>
       </div>
       <div className="navbar-end">
