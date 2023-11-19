@@ -6,9 +6,8 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "./styles.css";
-import img1 from "../../../assets/banner image/img1.jpeg";
-import img2 from "../../../assets/banner image/img2.jpg";
-import img3 from "../../../assets/banner image/img3.jpg";
+
+
 import { Slide } from "react-awesome-reveal";
 
 AOS.init();
@@ -26,7 +25,7 @@ const Banner = () => {
         autoplay={{ delay: 4000 }} // Add this line for autoplay with a delay of 3000 milliseconds (3 seconds)
       >
         <SwiperSlide className="relative hid-bid">
-          <img src={img1} alt="" />
+          <img src="https://i.ibb.co/bLC1NGS/img1.jpg" alt="" />
           <div className="absolute inset-0 bg-black opacity-75"></div>
           <div className="absolute top-30 left-20 text-justify">
             <Slide>
@@ -43,7 +42,7 @@ const Banner = () => {
             </Slide>
             <div data-aos="fade-right" data-aos-duration="1000">
               <Slide delay={1e2}>
-                <button className="px-4 py-2 border-2 font-medium bg-transparent text-white hover:border-2 hover:bg-yellow-500 hover:text-black ">
+                <button className="px-4 py-2 border-2 font-medium bg-transparent text-white hover:border-2 hover:bg-yellow-500 hover:text-black font-[arial] ">
                   Apply
                 </button>
               </Slide>
@@ -52,7 +51,7 @@ const Banner = () => {
         </SwiperSlide>
 
         <SwiperSlide className="relative hid-bid">
-          <img src={img2} alt="" />
+          <img src="https://i.ibb.co/BCZcQb1/img2.jpg" alt="" />
           <div className="absolute inset-0 bg-black opacity-75"></div>
           <div className="absolute top-30 left-20 text-justify">
             <Slide>
@@ -69,7 +68,7 @@ const Banner = () => {
             </Slide>
             <div data-aos="fade-right" data-aos-duration="1000">
               <Slide delay={1e2}>
-                <button className="px-4 py-2 border-2 font-medium bg-transparent text-white hover:border-2 hover:bg-yellow-500 hover:text-black ">
+                <button className="px-4 py-2 border-2 font-medium bg-transparent text-white hover:border-2 hover:bg-yellow-500 hover:text-black font-[arial] ">
                   Apply
                 </button>
               </Slide>
@@ -78,7 +77,7 @@ const Banner = () => {
         </SwiperSlide>
 
         <SwiperSlide className="relative hid-bid">
-          <img src={img3} alt="" />
+          <img src="https://i.ibb.co/gJxQKYk/img3.jpg" alt="" />
           <div className="absolute inset-0 bg-black opacity-75"></div>
           <div className="absolute top-30 left-20 text-justify">
             <Slide>
@@ -95,7 +94,7 @@ const Banner = () => {
             </Slide>
             <div data-aos="fade-right" data-aos-duration="1000">
               <Slide delay={1e2}>
-                <button className="px-4 py-2 border-2 font-medium bg-transparent text-white hover:border-2 hover:bg-yellow-500 hover:text-black ">
+                <button className="px-4 py-2 border-2 font-medium bg-transparent text-white hover:border-2 hover:bg-yellow-500 hover:text-black font-[arial]">
                   Apply
                 </button>
               </Slide>
