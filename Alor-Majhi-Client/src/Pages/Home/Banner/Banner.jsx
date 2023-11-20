@@ -29,14 +29,14 @@ const Banner = () => {
           <div className="absolute inset-0 bg-black opacity-75"></div>
           <div className="absolute top-30 left-20 text-justify">
             <Slide>
-              <h1 className="text-6xl font-semibold text-white font-[arial] ">
+              <h1 className="text-2xl md:text-6xl font-semibold text-white font-[arial] ">
                 Lorem ipsum dolor sit <br /> amet consectetur <br /> adipisicing
                 elit deserunt.
               </h1>
             </Slide>
             <Slide>
               {" "}
-              <p className="text-2xl font-medium my-5 text-yellow-50 font-[arial] ">
+              <p className="text-[16px] md:text-2xl font-medium my-5 text-yellow-50 font-[arial] ">
                 Lorem ipsum dolor sit amet consectetur.
               </p>{" "}
             </Slide>
@@ -55,14 +55,14 @@ const Banner = () => {
           <div className="absolute inset-0 bg-black opacity-75"></div>
           <div className="absolute top-30 left-20 text-justify">
             <Slide>
-              <h1 className="text-6xl font-semibold text-white font-[arial] ">
+              <h1 className="text-2xl md:text-6xl font-semibold text-white font-[arial] ">
                 Lorem ipsum dolor sit <br /> amet consectetur <br /> adipisicing
                 elit deserunt.
               </h1>
             </Slide>
             <Slide>
               {" "}
-              <p className="text-2xl font-medium my-5 text-yellow-50 font-[arial] ">
+              <p className="text-[16px] md:text-2xl font-medium my-5 text-yellow-50 font-[arial] ">
                 Lorem ipsum dolor sit amet consectetur.
               </p>{" "}
             </Slide>
@@ -81,14 +81,14 @@ const Banner = () => {
           <div className="absolute inset-0 bg-black opacity-75"></div>
           <div className="absolute top-30 left-20 text-justify">
             <Slide>
-              <h1 className="text-6xl font-semibold text-white font-[arial] ">
+              <h1 className="text-2xl md:text-6xl font-semibold text-white font-[arial] ">
                 Lorem ipsum dolor sit <br /> amet consectetur <br /> adipisicing
                 elit deserunt.
               </h1>
             </Slide>
             <Slide>
               {" "}
-              <p className="text-2xl font-medium my-5 text-yellow-50 font-[arial] ">
+              <p className="text-[16px] md:text-2xl font-medium my-5 text-yellow-50 font-[arial] ">
                 Lorem ipsum dolor sit amet consectetur.
               </p>{" "}
             </Slide>
