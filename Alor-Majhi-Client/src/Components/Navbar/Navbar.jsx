@@ -45,7 +45,10 @@ const Navbar = () => {
               <Link>Members</Link>
             </li>
             <li>
-              <Link>About Us</Link>
+              <Link to="/about">About Us</Link>
+            </li>
+            <li>
+              <Link to="/events">Events</Link>
             </li>
             <li>
               <Link>Contract Us</Link>
@@ -76,7 +79,10 @@ const Navbar = () => {
               <Link>Members</Link>
             </li>
             <li>
-              <Link>About Us</Link>
+              <Link to="/about">About Us</Link>
+            </li>
+            <li>
+              <Link to="/events">Events</Link>
             </li>
             <li>
               <Link>Contract Us</Link>
@@ -84,7 +90,7 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <Link className="btn">Apply for Membership</Link>
+        <Link to='/application-form' className="btn">Apply for Membership</Link>
       </div>
     </div>
   );
