@@ -1,44 +1,18 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { FaRegClock, FaLocationDot } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const Events = () => {
-  const eventData = [
-    {
-      date: "31 JAN",
-      title: "Insure Clean Water To Africa",
-      time: "8:00 am-5:00 pm",
-      location: "Nimtola, Chattogram",
-      description:
-        "Lorem ipsum dolor sit amet, quo odio atqui tamquam eu, duo ex amet elitr. Ne essent feugiat vim, et soluta reprimique instructior mel. Munere tamquam referrentur ad duo, ei",
-      imageUrl:
-        "http://www.c.commonsupport.com/huminity/wp-content/uploads/2017/08/event-3.jpg",
-    },
-    {
-      date: "30 SEP",
-      title: "Insure Clean Water To Africa",
-      time: "8:00 am-5:00 pm",
-      location: "Nimtola, Chattogram",
-      description:
-        "Lorem ipsum dolor sit amet, quo odio atqui tamquam eu, duo ex amet elitr. Ne essent feugiat vim, et soluta reprimique instructior mel. Munere tamquam referrentur ad duo, ei",
-      imageUrl:
-        "http://www.c.commonsupport.com/huminity/wp-content/uploads/2017/08/event-6.jpg",
-    },
-    {
-      date: "31 DEC",
-      title: "Insure Clean Water To Africa",
-      time: "8:00 am-5:00 pm",
-      location: "Nimtola, Chattogram",
-      description:
-        "Lorem ipsum dolor sit amet, quo odio atqui tamquam eu, duo ex amet elitr. Ne essent feugiat vim, et soluta reprimique instructior mel. Munere tamquam referrentur ad duo, ei",
-      imageUrl:
-        "http://www.c.commonsupport.com/huminity/wp-content/uploads/2017/08/event-3.jpg",
-    },
-    // Add more event data objects as needed
-  ];
+  const [teams, setTeams] = useState([]);
+  useEffect(() => {
+    fetch("team.json")
+      .then((res) => res.json())
+      .then((data) => setTeams(data));
+  }, []);
 
   return (
     <div>
-      {eventData.map((event, index) => (
+      {teams.map((event, index) => (
         <div key={index} className="hero bg-base-200 lg:m-10 py-5 lg:py-0">
           <div className="hero-content flex-col lg:flex-row gap-8">
             <div className="relative">
@@ -67,9 +41,17 @@ const Events = () => {
                 </h4>
               </div>
               <p className="py-2 text-gray-400 w-2/3">{event.description}</p>
+              <Link
+                to={`/eventDetails/${event.id}`}
+                className="py-3 text-red-500 font-bold hover:bg-red-500 hover:text-white hover:p-2 hover:rounded-lg"
+              >
+                View Details <span className="text-sm"> &gt; </span>{" "}
+              </Link>
+
               <button className="py-3 text-red-500 font-bold hover:bg-red-500 hover:text-white hover:p-2 hover:rounded-lg">
                 View Details <span className="text-sm"> &gt; </span>{" "}
               </button>
+
             </div>
           </div>
         </div>
