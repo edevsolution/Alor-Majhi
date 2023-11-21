@@ -3,6 +3,7 @@ import Contact from "../Contact/Contact";
 import About from "./About/About";
 import Banner from "./Banner/Banner";
 import Testimonial from "../../Components/Testimonial/Testimonial";
+import JoinUs from './JoinUs/JoinUs';
 import Gallery from "../Shared/Gallery/Gallery";
 import EventTab from "../Shared/Event/EventTab";
 import ContactUs from "../Contact/Contact";
@@ -18,8 +19,9 @@ const Home = () => {
       <Testimonial />
       <EventTab />
       <ContactUs />
-    </div>
-  );
+     <Contact />
+     <JoinUs></JoinUs>
+    );
 };
 
 export default Home;

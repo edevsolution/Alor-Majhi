@@ -90,6 +90,8 @@ const Navbar = () => {
           <li>
             <Link>Contract Us</Link>
           </li>
+
+              
         </ul>
       </div>
       <div className="navbar-end">
