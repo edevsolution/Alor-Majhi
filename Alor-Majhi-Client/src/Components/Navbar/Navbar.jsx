@@ -3,7 +3,7 @@ import logo2 from "../../../public/logo/logo2.png";
 
 const Navbar = () => {
   return (
-    <div className="navbar bg-white shadow-lg">
+    <div className="navbar bg-white shadow-lg z-10">
       <div className="navbar-start flex items-center">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -24,7 +24,7 @@ const Navbar = () => {
           </label>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 font-semibold"
+            className="menu menu-sm dropdown-content mt-3 z-[100] p-2 shadow bg-base-100 rounded-box w-52 font-semibold"
           >
             <li>
               <Link>Home</Link>
@@ -47,6 +47,9 @@ const Navbar = () => {
               <Link to="/about">About Us</Link>
             </li>
             <li>
+              <Link to="/events">Events</Link>
+            </li>
+            <li>
               <Link>Contract Us</Link>
             </li>
           </ul>
@@ -56,7 +59,7 @@ const Navbar = () => {
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1 font-semibold">
+        <ul className="menu menu-horizontal px-1 z-[100] font-semibold">
           <li>
             <Link to="/">Home</Link>
           </li>
@@ -76,10 +79,13 @@ const Navbar = () => {
             </details>
           </li>
           <li>
-            <Link>Members</Link>
+            <Link to="/team">Members</Link>
           </li>
           <li>
-            <Link>About Us</Link>
+            <Link to="/about">About Us</Link>
+          </li>
+          <li>
+            <Link to="/events">Events</Link>
           </li>
           <li>
             <Link>Contract Us</Link>
@@ -87,7 +93,9 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <Link className="btn">Apply for Membership</Link>
+        <Link to="/application-form" className="btn">
+          Apply for Membership
+        </Link>
       </div>
     </div>
   );
