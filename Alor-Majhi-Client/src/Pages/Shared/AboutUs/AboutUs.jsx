@@ -141,6 +141,10 @@ const AboutUs = () => {
             <h2 className="text-white text-4xl font-bold">100</h2>
             <h2 className="text-white text-4xl font-bold">Project Done</h2>
           </div>
+          <div className="  top-[200px] text-center">
+            <h2 className="text-white text-4xl font-bold">100</h2>
+            <h2 className="text-white text-4xl font-bold">Project Done</h2>
+          </div>
         </div>
       </div>
     </div>
