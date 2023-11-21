@@ -7,8 +7,6 @@ import ApplicationForm from "../Components/ApplicationForm/ApplicationForm";
 import Team from "../Pages/Shared/Team/Team";
 import Events from "../Pages/Shared/Event/Events";
 import EventDetails from "../Pages/Shared/Event/EventDetails";
-import Events from "../Pages/Shared/Event/Events";
-
 
 const router = createBrowserRouter([
   {
@@ -32,19 +30,17 @@ const router = createBrowserRouter([
         path: "team",
         element: <Team />,
       },
-      {
-        path: "events",
-        element: <Events />,
-      },
+
       {
         path: "eventDetails/:id",
         element: <EventDetails />,
-        path: "/events",
-        element: <Events/>,
       },
-      
+      {
+        path: "/events",
+        element: <Events />,
+      },
     ],
   },
 ]);
 
-export default router;
+export default router;

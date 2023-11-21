@@ -51,7 +51,6 @@ const Events = () => {
               <button className="py-3 text-red-500 font-bold hover:bg-red-500 hover:text-white hover:p-2 hover:rounded-lg">
                 View Details <span className="text-sm"> &gt; </span>{" "}
               </button>
-
             </div>
           </div>
         </div>
